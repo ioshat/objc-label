@@ -1,0 +1,9 @@
+UILabel *{name} = [[UILabel alloc] init];{~n}
+[{name} setTranslatesAutoresizingMaskIntoConstraints:NO];{~n}
+{name}.backgroundColor = [UIColor clearColor];{~n}
+{name}.textColor = [UIColor {@objCColor}{baseTextStyle.color}{/objCColor}];{~n}
+{name}.font = [UIFont fontWithName:@"[TextFont {@objCFont}{baseTextStyle.font}{/objCFont}]" size:24];{~n}
+{name}.textAlignment = {@objCAlignment}{textAlign}{/objCAlignment};{~n}
+{name}.text = {@nsLocalizedString}{text}{/nsLocalizedString};{~n}{~n}
+
+[superView addSubview:{name}];

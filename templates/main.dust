@@ -2,7 +2,7 @@ UILabel *{name} = [[UILabel alloc] init];{~n}
 [{name} setTranslatesAutoresizingMaskIntoConstraints:NO];{~n}
 {name}.backgroundColor = [UIColor clearColor];{~n}
 {name}.textColor = [UIColor {@objCColor:baseTextStyle}{baseTextStyle.color}{/objCColor}];{~n}
-{name}.font = [UIFont fontWithName:@"[TextFont {@objCFont}{baseTextStyle.font}{/objCFont}]" size:{@math key="{baseTextStyle.font.size}" method="divide" operand="2" /}];{~n}
+{name}.font = [UIFont fontWithName:@"{@objCFont}{baseTextStyle.font}{/objCFont}" size:{baseTextStyle.font.size}];{~n}
 {name}.textAlignment = {@objCAlignment}{textAlign}{/objCAlignment};{~n}
 {name}.text = {@nsLocalizedString}{text}{/nsLocalizedString};{~n}{~n}
 
